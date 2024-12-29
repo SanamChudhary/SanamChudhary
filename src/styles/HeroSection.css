@@ -1,0 +1,164 @@
+/* General Section Styling */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.hero hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+/* Intro Section */
+.hero-intro {
+  flex: 1;
+  max-width: 600px;
+  margin-top: 10%;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: none;
+  font-size: 0.8rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Image Styling */
+.hero-image {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15px;
+    margin-top: 10%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .hero-image {
+    max-width: 250px;
+  }
+}
+
+/* Theme-specific styling for Hero section */
+.theme-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.theme-container .hero h2 {
+  color: var(--text-color);
+}
+
+.theme-container .hero p {
+  color: var(--text-color);
+}
+
+.theme-container .btn {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.theme-container .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Apply specific styling for dark theme */
+.theme-container.theme-dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.theme-container.theme-dark .hero {
+  background-color: var(--bg-color);
+}
+
+.theme-container.theme-dark .btn {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.theme-container.theme-dark .btn:hover {
+  background-color: var(--secondary-color);
+}

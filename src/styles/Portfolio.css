@@ -1,0 +1,93 @@
+/* Portfolio Section Styling */
+.portfolio {
+  padding: 20px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio h1 {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 10px 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Project Details Styling */
+.project-detail h3 {
+  font-size: 36px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.project-detail p {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+/* Portfolio Grid Layout */
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Project Card Styling */
+.project-card {
+  display: flex;
+  gap: 20px;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.description {
+  margin-left: 10%;
+}
+
+.project-card img {
+  max-width: 20%;
+  max-height: 35vw;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+/* Project Links Styling */
+.project-info a {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-info a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Mobile-Friendly Portfolio Section */
+@media (max-width: 768px) {
+  .project-detail h2 {
+    font-size: 30px;
+  }
+
+  .project-detail p {
+    font-size: 16px;
+  }
+}

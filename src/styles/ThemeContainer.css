@@ -1,0 +1,38 @@
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #212121;
+  --accent-color: #0078d7;
+  --secondary-color: #00bfa5;
+  --border-color: #ddd;
+}
+
+.theme-dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+  --secondary-color: #03dac6;
+  --border-color: #444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  opacity: 0.9;
+}
