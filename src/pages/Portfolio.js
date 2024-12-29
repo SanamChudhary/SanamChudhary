@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Simon-Says',
     description: 'Simon Says is a fun and interactive memory game where the player must repeat a sequence of colors (or other elements) shown on the screen. This project is a great way to showcase my ability to integrate all three technologies effectively in a real-world application. It highlights your skills in interactivity, design, and logic implementation.',
-    link: 'file:///D:/Simon%20Say%20Game/Simon-Says-Game/index.html',
+    link: 'https://simonsaysgamechild.netlify.app/',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     image: SimonSaysImage
   }
