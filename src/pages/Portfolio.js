@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Simple Portfolio',
     description: 'A personal portfolio website that showcases web development skills, project experience, and professional background.',
-    link: 'https://sanamchy.netlify.app/',
+    link: 'https://sanamchudhary.github.io/',
     technologies: ['React', 'HTML', 'CSS'],
     image: PortfolioImage,
   },
