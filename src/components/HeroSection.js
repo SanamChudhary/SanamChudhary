@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/HeroSection.css';
 import img from '../assets/hero-image.png';
@@ -22,7 +23,7 @@ const HeroSection = () => {
           <p>
             As a MERN stack developer, I specialize in building dynamic and scalable web applications using MongoDB, Express.js, React, and Node.js.
           </p>
-          <a href="../pages/Portfolio.js" className="btn">View My Work</a>
+          <Link to="/portfolio" className="btn">View My Work</Link>
         </div>
         <motion.img
           src={img}
