@@ -22,7 +22,7 @@ const HeroSection = () => {
           <p>
             As a MERN stack developer, I specialize in building dynamic and scalable web applications using MongoDB, Express.js, React, and Node.js.
           </p>
-          <a href="/portfolio" className="btn">View My Work</a>
+          <a href="../pages/Portfolio.js" className="btn">View My Work</a>
         </div>
         <motion.img
           src={img}
