@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-clean && gh-pages -d build -r https://github.com/SanamChudhary/sanamchudhary.github.io",
+    "deploy": "gh-pages -d build https://github.com/SanamChudhary/sanamchudhary.github.io",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
