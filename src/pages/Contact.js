@@ -7,7 +7,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '../styles/Contact.css';
 
 const Contact = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext); 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState('');
@@ -60,7 +60,7 @@ const Contact = () => {
         <div className="pdf-viewer">
           {/* PDF Viewer */}
           <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-            <Viewer fileUrl={`${process.env.PUBLIC_URL}/resume/Sanam_ChaudharyCV.pdf`} />
+            <Viewer fileUrl="/resume/Sanam_ChudharyCV.pdf" />
           </Worker>
         </div>
       </div>
