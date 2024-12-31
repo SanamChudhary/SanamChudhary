@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "node-modules",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://sanamchudhary.github.io",
@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages-clean && gh-pages -d build -r https://github.com/SanamChudhary/sanamchudhary.github.io",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -49,5 +49,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
